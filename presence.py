@@ -45,7 +45,7 @@ def whosHere(i):
 	        print(occupant[i] + "'s device is connected to your network")
 	        if presentSent[i] == 0:
 	        	# Stream that device is present
-	        	streamer.log(occupant[i],":house_with_garden:")
+	        	streamer.log(occupant[i],":office:")
 	        	streamer.flush()
 	        	print(occupant[i] + " present streamed")
 	        	# Reset counters so another stream isn't sent if the device
@@ -68,7 +68,7 @@ def whosHere(i):
 	    		firstRun[i] = 0
 		        if notPresentSent[i] == 0:
 		        	# Stream that device is not present
-		        	streamer.log(occupant[i],":no_entry_sign::house_with_garden:")
+		        	streamer.log(occupant[i],":no_entry_sign::office:")
 		        	streamer.flush()
 		        	print(occupant[i] + " not present streamed")
 		        	# Reset counters so another stream isn't sent if the device
