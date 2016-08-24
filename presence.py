@@ -25,7 +25,7 @@ notPresentSent = [0] * len(occupant)
 counter = [0] * len(occupant)
 
 # Function that checks for device presence
-def whosHome(i):
+def whosHere(i):
 
 	# 30 second pause to allow main thread to finish arp-scan and populate output
 	sleep(30)
@@ -99,7 +99,7 @@ try:
 	# Start the thread(s)
 	# It will start as many threads as there are values in the occupant array
 	for i in range(len(occupant)):
-		t = Thread(target=whosHome, args=(i,))
+		t = Thread(target=whosHere, args=(i,))
 		t.start()
 
 	while True:
