@@ -1,7 +1,7 @@
-#Know Who's at the Office with the Raspberry Pi
+# Know Who's at the Office with the Raspberry Pi
 ---
 
-#Introduction
+# Introduction
 
 ![pipresencemain](https://cloud.githubusercontent.com/assets/10930201/17980701/27f5df6c-6ac6-11e6-8769-1cb1e04eb2b2.png)
 
